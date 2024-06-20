@@ -15,6 +15,7 @@
     ".projen/files.json",
     ".projen/tasks.json",
     "cdk.json",
+    "hands-on.json",
     "LICENSE",
     "tsconfig.dev.json",
     "tsconfig.json"

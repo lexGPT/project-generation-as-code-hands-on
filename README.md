@@ -121,6 +121,8 @@ export class CustomAwsCdkTypeScriptApp extends awscdk.AwsCdkTypeScriptApp {
 }
 ```
 
+Also delete the sample test in the `test` folder as this will not work anymore.
+
 Now, you have the basic structure and can use this locally instead of the default Projen setup. You can modify the existing project class and import from `awscdk.AwsCdkTypeScriptApp` to `CustomAwsCdkTypeScriptApp`.
 
 To use this custom project with `npx projen new`, you can use the `--from` option with the CLI. This option supports any value that you can provide to [yarn add](https://classic.yarnpkg.com/en/docs/cli/add#toc-adding-dependencies). For this workshop, we'll use path referencing to install the `projen-extension` dependency. Though this method is not recommended outside of testing, it is faster than releasing it to npm.

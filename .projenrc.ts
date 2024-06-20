@@ -1,5 +1,8 @@
-import { JsonFile, awscdk } from 'projen';
-const project = new awscdk.AwsCdkTypeScriptApp({
+import { JsonFile } from 'projen';
+import { CustomAwsCdkTypeScriptApp } from './projen-extension/src';
+
+
+const project = new CustomAwsCdkTypeScriptApp({
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   name: 'project-generation-as-code',
